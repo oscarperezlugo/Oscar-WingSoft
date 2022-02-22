@@ -1,0 +1,21 @@
+<h2>Intercepción</h2>
+<div id="search-component">
+    <label for="a-box">Array A</label>
+    <input #a id="a-box" #elementos />
+    <br>
+    <label for="b-box">Array B</label>
+    <input #b id="b-box" #tamanos/>
+
+    <button type="button" class="add-button" (click)="calcular(a.value, b.value);">
+        Calcular
+    </button>
+</div>
+
+<ul class="heroes">
+    <li *ngFor="let value of numeros_intercepcion; let i = index;">
+        <a>
+            <span class="badge">{{i+1}}</span> {{value}}
+        </a>
+        <!-- <button type="button" class="delete" title="delete hero">x</button> -->
+    </li>
+</ul>

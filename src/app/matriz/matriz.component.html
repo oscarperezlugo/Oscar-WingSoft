@@ -1,0 +1,21 @@
+<h2>Matriz</h2>
+<div id="search-component">
+    <label for="array-box">Array</label>
+    <input #searchBox id="array-box" #elementos />
+    <br>
+    <label for="size-box">Tamaño</label>
+    <input #searchBox id="size-box" #tamanos/>
+
+    <button type="button" class="add-button" (click)="calcular(elementos.value, tamanos.value);">
+        Calcular
+    </button>
+</div>
+
+<ul class="heroes">
+    <li *ngFor="let value of numeros_matriz; let i = index;">
+        <a>
+            <span class="badge">{{i+1}}</span> {{value}}
+        </a>
+        <!-- <button type="button" class="delete" title="delete hero">x</button> -->
+    </li>
+</ul>

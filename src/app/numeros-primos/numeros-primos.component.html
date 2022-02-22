@@ -1,0 +1,19 @@
+<h2>Números Primos</h2>
+<div id="search-component">
+    <label for="primos-box">Números Primos</label>
+    <input #primos id="primos-box" />
+
+
+    <button type="button" class="add-button" (click)="calcular(primos.value)">
+        Calcular
+    </button>
+</div>
+
+<ul class="heroes">
+    <li *ngFor="let primo of numeros_primos; let i = index;">
+        <a>
+            <span class="badge">{{i+1}}</span> {{primo}}
+        </a>
+        <!-- <button type="button" class="delete" title="delete hero">x</button> -->
+    </li>
+</ul>
